@@ -36,3 +36,4 @@ Once you have completed the above for all three URLs,
  1. On each page, add links to get to the other two pages (so that our users don't have to keep typing into the address bar).
  1. I dropped three images in the `public/assets/images` folder: `rock.png`, `paper.png`, and `scissors.png`. Therefore, they are available to use (e.g., as the `src=""` of `<img>`s) at [http://localhost:3000/assets/images/rock.png](http://localhost:3000/assets/images/rock.png), etc. Use the images on your pages as you see fit.
  1. I also dropped `bootstrap.css` in the `public/assets/css` folder. `<link>` to it in `app/views/layouts/application.html.erb`, and use Bootstrap styles to make everything look nicer.
+ 1. Add a root URL such that visiting the bare domain, [http://localhost:3000](http://localhost:3000), defaults to playing rock.
