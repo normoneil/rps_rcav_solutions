@@ -6,11 +6,13 @@ We are going to build a simple game. Users are allowed to choose Rock, Paper, or
  - [http://localhost:3000/paper](http://localhost:3000/paper)
  - [http://localhost:3000/scissors](http://localhost:3000/scissors)
 
-And we will tell them whether they won or lost.
+And we will tell them whether they won or lost. Your target, in the end, is this:
+
+https://rps-rcav-target.herokuapp.com
 
 ### Setup
 
- - Clone directly from this repository (**don't fork**).
+ - First **fork**, and *then* clone.
  - `cd` to the root folder of the application.
  - `bundle install` (or just `bundle` for short).
  - `rails server` (or just `rails s` for short).
@@ -27,12 +29,10 @@ Add support for [each](http://localhost:3000/rock) [of](http://localhost:3000/pa
  1. Now step back into the action and write some logic to determine whether the player won or lost. Put the computer move and the outcome into instance variables.
  1. In the view template, display the instance variables. Format it a little with some markup and some copy.
 
-#### Optional
+#### Part 2
 
 Once you have completed the above for all three URLs,
 
  1. On each page, add links to get to the other two pages (so that our users don't have to keep typing into the address bar).
- 1. I dropped three images in the `public/assets/images` folder: `rock.png`, `paper.png`, and `scissors.png`. Therefore, they are available to use at [http://localhost:3000/assets/images/rock.png](http://localhost:3000/assets/images/rock.png), etc. Use the images on your pages as you see fit.
- 1. I also dropped `bootstrap.css` in the `public/assets/css` folder. Link to it in `app/views/layouts/application.html.erb`, and use Bootstrap styles to make everything look nicer.
-
-
+ 1. I dropped three images in the `public/assets/images` folder: `rock.png`, `paper.png`, and `scissors.png`. Therefore, they are available to use (e.g., as the `src=""` of `<img>`s) at [http://localhost:3000/assets/images/rock.png](http://localhost:3000/assets/images/rock.png), etc. Use the images on your pages as you see fit.
+ 1. I also dropped `bootstrap.css` in the `public/assets/css` folder. `<link>` to it in `app/views/layouts/application.html.erb`, and use Bootstrap styles to make everything look nicer.
